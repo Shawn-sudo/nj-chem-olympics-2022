@@ -14,9 +14,12 @@ const Footer = () => {
   return (
     <footer
       className="App-footer"
-      style={{ textAlign: "center", backgroundColor: "ghostwhite" }}
+      style={{
+        textAlign: "center",
+        backgroundColor: "ghostwhite",
+        padding: 20,
+      }}
     >
-      <div style={{ height: 20 }} />
       <Link to="/">
         <img
           src="/assets/profile/profile.jpg"
@@ -65,8 +68,6 @@ const Footer = () => {
           Font Awesome
         </a>
       </p> */}
-      <p style={{ opacity: 0.5 }}>{window.location.pathname}</p>
-      <div style={{ height: 20 }} />
     </footer>
   );
 };
