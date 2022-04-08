@@ -1,3 +1,9 @@
+## Page Editing
+ 1. Go to `src/pages/` and add a page
+    - `src/pages/MyPageName.js` would be accessible from `nj-chem-2022.seihyun.atrable.com/MyPageName`
+    - `src/pages/docs/abc/def.js` would be accessible from `nj-chem-2022.seihyun.atrable.com/docs/abc/def`, according to the Gatsby doc
+
+
 <p align="center">
   <a href="https://www.gatsbyjs.com/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter">
     <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
