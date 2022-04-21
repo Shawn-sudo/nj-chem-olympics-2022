@@ -5,7 +5,14 @@ import Layout from "../components/Layout";
 
 // styles
 const headingStyles = {
-  color: "var(--green)",
+  color: "var(--purple)",
+};
+
+const pageContentLayoutStyles = {
+  minHeight: "100vh",
+  maxWidth: 1200,
+  margin: "auto",
+  paddingTop: 96 - 55,
 };
 
 const paragraphStyles = {
@@ -17,20 +24,11 @@ const NotFoundPage = () => {
   return (
     <Layout>
       <title>Page Not found</title>
-      <main>
+      <main style={pageContentLayoutStyles}>
         <h1 style={headingStyles}>Page not found</h1>
         <h3>404</h3>
         <p style={paragraphStyles}>
           So sad . . . {/* we couldn’t find what you were looking for. */}
-          {/* <br />
-        {process.env.NODE_ENV === "development" ? (
-          <>
-            <br />
-            Try creating a page in <code style={codeStyles}>src/pages/</code>.
-            <br />
-          </>
-        ) : null}
-        <br /> */}
           <Link to="/">Go home</Link>
         </p>
       </main>
