@@ -1,4 +1,5 @@
 import React from "react";
+import Helmet from "react-helmet";
 import Footer from "./Footer";
 
 //styles
@@ -12,36 +13,15 @@ const pageStyles = {
 
 const Layout = ({ children }) => {
   return (
-    <div style={pageStyles}>
-      <div
-        style={{
-          backgroundColor: "rgba(248, 248, 255, 0.4)",
-          height: 55,
-          width: "100%",
-          position: "fixed",
-          top: 0,
-          left: 0,
-          display: "flex",
-          justifyContent: "space-between",
-          backdropFilter: "blur(20px)",
-          zIndex: 10,
-        }}
-      >
-        Appbar here
+    <>
+      <Helmet>
+        <meta name="theme-color" content="#705df2" />
+      </Helmet>
+      <div style={pageStyles}>
+        <div>{children}</div>
+        <Footer />
       </div>
-      <div style={{ minHeight: "100vh" }}>
-        <div
-          style={{
-            paddingTop: "96px",
-            maxWidth: 1000,
-            margin: "auto",
-          }}
-        >
-          {children}
-        </div>
-      </div>
-      <Footer />
-    </div>
+    </>
   );
 };
 

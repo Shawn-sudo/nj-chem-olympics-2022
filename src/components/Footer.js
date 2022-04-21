@@ -22,19 +22,19 @@ const Footer = () => {
     >
       <Link to="/">
         <img
-          src="/assets/profile/profile.jpg"
+          src="/assets/shawn.jpg"
           alt="my face"
           className="little-shadow"
           style={imgStyles}
         />
         <img
-          src="/assets/profile/profile.jpg"
+          src="/assets/andy.jpg"
           alt="Andy's Face"
           className="little-shadow"
           style={imgStyles}
         />
         <img
-          src="/assets/profile/profile.jpg"
+          src="/assets/ethan.jpg"
           alt="Ethan's face"
           className="little-shadow"
           style={imgStyles}

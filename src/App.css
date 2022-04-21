@@ -1,5 +1,14 @@
+* {
+  transition: 0.5s;
+  transition-timing-function: ease-in-out;
+}
+
+.transition-by-itself {
+  transition: none;
+}
+
 :root {
-    --green: #69f0ae
+  --green: #69f0ae;
 }
 
 .little-shadow {
@@ -12,4 +21,12 @@
 
 .rounded-border {
   border-radius: 20px;
+}
+
+body {
+  margin: 0;
+}
+
+h2 {
+  color: #705df2;
 }
