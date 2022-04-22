@@ -8,7 +8,11 @@
 }
 
 :root {
-  --purple: #705df2;
+  --primary: #705df2;
+  --primary-darker: rgba(21, 12, 34);
+  /* --highlight */
+  /* --hint */
+  /* --disabled */
 }
 
 .little-shadow {
@@ -28,5 +32,5 @@ body {
 }
 
 h2 {
-  color: var(--purple);
+  color: var(--primary);
 }

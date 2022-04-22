@@ -1,14 +1,17 @@
 import React from "react";
 import { Link } from "gatsby";
+import { StaticImage } from "gatsby-plugin-image";
 
 //styles
 const imgStyles = {
   height: 75,
   width: 75,
-  objectFit: "cover",
   padding: 7.5,
+  margin: 7.5,
   borderRadius: 30,
 };
+
+const endingCreditStyles = { fontWeight: "bold" };
 
 const Footer = () => {
   return (
@@ -21,53 +24,37 @@ const Footer = () => {
       }}
     >
       <Link to="/">
-        <img
-          src="/assets/shawn.jpg"
-          alt="my face"
+        <StaticImage
+          src="../images/profiles/shawn.jpg"
+          alt="Shawn's Face"
           className="little-shadow"
           style={imgStyles}
         />
-        <img
-          src="/assets/andy.jpg"
+
+        <StaticImage
+          src="../images/profiles/andy.jpg"
           alt="Andy's Face"
           className="little-shadow"
           style={imgStyles}
         />
-        <img
-          src="/assets/ethan.jpg"
-          alt="Ethan's face"
+
+        <StaticImage
+          src="../images/profiles/ethan.jpg"
+          alt="Ethan's Face"
           className="little-shadow"
           style={imgStyles}
         />
       </Link>
       <p>&copy; 2022. Seihyun Lee, Andy Zhao, Ethan Zhao</p>
-      {/* <p style={{ fontWeight: "bold" }}>Made by Seihyun (Shawn) Lee</p> */}
-      {/* <p
-        style={{
-          opacity: 0.5,
-        }}
-      >
-        Used&nbsp;
-        <a href="https://reactjs.org" target="_blank" rel="noopener noreferrer">
-          React
-        </a>
-        ,&nbsp;
-        <a
-          href="https://firebase.google.com/products/hosting"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Firebase Hosting
-        </a>
-        , and&nbsp;
-        <a
-          href="https://fontawesome.com"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Font Awesome
-        </a>
-      </p> */}
+
+      <p style={endingCreditStyles}>
+        Todo: put roles here (develop: --, data research (from the Internet ig):
+        --)
+      </p>
+
+      <p style={endingCreditStyles}>Develop: Seihyun Lee, </p>
+      <p style={endingCreditStyles}>Design: Seihyun Lee, </p>
+      <p style={endingCreditStyles}>Research: </p>
     </footer>
   );
 };

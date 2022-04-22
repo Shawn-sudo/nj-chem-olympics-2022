@@ -5,7 +5,7 @@ import Layout from "../components/Layout";
 
 // styles
 const headingStyles = {
-  color: "var(--purple)",
+  color: "var(--primary)",
 };
 
 const pageContentLayoutStyles = {
