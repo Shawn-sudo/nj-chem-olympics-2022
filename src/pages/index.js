@@ -3,6 +3,7 @@ import Layout from "../components/Layout";
 import ChemOfLead from "../components/home_page/chem_of_lead";
 import FlintWaterCrisis from "../components/home_page/flint_water_crisis";
 import HealthHazardsForLeadExposure from "../components/home_page/health_hazards_for_lead_exposure";
+import "../App.css";
 
 // styles
 const pageContentLayoutStyles = {
@@ -77,7 +78,6 @@ const pageContentLayoutStyles = {
 //   marginLeft: 10,
 //   lineHeight: 1,
 // };
-
 
 // markup
 const IndexPage = () => {
