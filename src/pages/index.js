@@ -31,6 +31,7 @@ const imgStyles = {
   width: 40,
   margin: 5,
   borderRadius: 20,
+  WebkitMaskImage: "-webkit-radial-gradient(white, black)",
 };
 
 // const headingStyles = {
@@ -146,7 +147,7 @@ const IndexPage = () => {
               style={imgStyles}
             />
           </Link>
-          Menu bar here: show the progress & contents
+          todo: show the progress
         </div>
       </div>
       <main style={pageContentLayoutVerticalStyles}>
@@ -165,6 +166,7 @@ const IndexPage = () => {
           style={{
             backgroundColor: "var(--primary-darker)",
           }}
+          className="darkRow"
         >
           <div style={pageContentLayoutHorizontalStyles}>
             <FlintWaterCrisis />

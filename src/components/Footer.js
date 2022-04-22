@@ -9,6 +9,7 @@ const imgStyles = {
   padding: 7.5,
   margin: 7.5,
   borderRadius: 30,
+  WebkitMaskImage: "-webkit-radial-gradient(white, black)",
 };
 
 const endingCreditStyles = { fontWeight: "bold" };
