@@ -1,5 +1,5 @@
 import React from "react";
-// import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet";
 import Footer from "./Footer";
 
 //styles
@@ -14,9 +14,9 @@ const pageStyles = {
 const Layout = ({ children }) => {
   return (
     <>
-      {/* <Helmet>
+      <Helmet>
         <meta name="theme-color" content="#705df2" />
-      </Helmet> */}
+      </Helmet>
       <div style={pageStyles}>
         <div>{children}</div>
         <Footer />
