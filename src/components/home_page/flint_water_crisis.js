@@ -1,18 +1,16 @@
 import React from "react";
 
-const passageStyles = {
-  color: "white",
+const cardStyles = {
+  backgroundColor: "rgba(128, 128, 128, 0.08)",
+  backdropFilter: "blur(20px) saturate(180%)",
+  WebkitBackdropFilter: "blur(20px) saturate(180%)",
+  padding: 20,
+  borderRadius: 20,
 };
 
 const FlintWaterCrisis = () => {
   return (
-    <div
-      style={{
-        padding: 20,
-        // marginTop: 20,
-        borderRadius: 20,
-      }}
-    >
+    <div style={cardStyles}>
       <h2>The Flint Water Crisis</h2>
       <p>
         What caused it and how was the crisis corrected? A clear understanding

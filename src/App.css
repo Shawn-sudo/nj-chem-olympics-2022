@@ -35,6 +35,10 @@ h2 {
   color: var(--primary);
 }
 
-.darkRow {
+.solid-row {
+  background-color: white;
+}
+
+.transparent-row {
   color: white;
 }

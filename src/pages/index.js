@@ -10,20 +10,13 @@ import { StaticImage } from "gatsby-plugin-image";
 // styles
 const pageContentLayoutVerticalStyles = {
   minHeight: "100vh",
-  // maxWidth: 1200,
-  // margin: "auto",
-  paddingTop: 96,
-  // paddingLeft: 20,
-  // paddingRight: 20,
+  // paddingTop: 96,
 };
 
 const pageContentLayoutHorizontalStyles = {
   maxWidth: 1200,
   margin: "auto",
-  paddingLeft: 20,
-  paddingRight: 20,
-  paddingTop: 20,
-  paddingBottom: 20,
+  padding: 20,
 };
 
 const imgStyles = {
@@ -33,72 +26,6 @@ const imgStyles = {
   borderRadius: 20,
   WebkitMaskImage: "-webkit-radial-gradient(white, black)",
 };
-
-// const headingStyles = {
-//   marginTop: 0,
-//   marginBottom: 64,
-//   maxWidth: 320,
-// };
-// const headingAccentStyles = {
-//   color: "#663399",
-// };
-// const paragraphStyles = {
-//   marginBottom: 48,
-// };
-// const codeStyles = {
-//   color: "#8A6534",
-//   padding: 4,
-//   backgroundColor: "#FFF4DB",
-//   fontSize: "1.25rem",
-//   borderRadius: 4,
-// };
-// const listStyles = {
-//   marginBottom: 96,
-//   paddingLeft: 0,
-// };
-// const listItemStyles = {
-//   fontWeight: 300,
-//   fontSize: 24,
-//   maxWidth: 560,
-//   marginBottom: 30,
-// };
-
-// const linkStyle = {
-//   color: "#8954A8",
-//   fontWeight: "bold",
-//   fontSize: 16,
-//   verticalAlign: "5%",
-// };
-
-// const docLinkStyle = {
-//   ...linkStyle,
-//   listStyleType: "none",
-//   marginBottom: 24,
-// };
-
-// const descriptionStyle = {
-//   color: "#232129",
-//   fontSize: 14,
-//   marginTop: 10,
-//   marginBottom: 0,
-//   lineHeight: 1.25,
-// };
-
-// const badgeStyle = {
-//   color: "#fff",
-//   backgroundColor: "#088413",
-//   border: "1px solid #088413",
-//   fontSize: 11,
-//   fontWeight: "bold",
-//   letterSpacing: 1,
-//   borderRadius: 4,
-//   padding: "4px 6px",
-//   display: "inline-block",
-//   position: "relative",
-//   top: -2,
-//   marginLeft: 10,
-//   lineHeight: 1,
-// };
 
 // markup
 const IndexPage = () => {
@@ -150,80 +77,118 @@ const IndexPage = () => {
           todo: show the progress
         </div>
       </div>
+
       <main style={pageContentLayoutVerticalStyles}>
         {/* Content wrapper */}
         <title>Home Page</title>
 
-        <div style={pageContentLayoutHorizontalStyles}>
-          <ChemOfLead />
-        </div>
-
-        <div style={pageContentLayoutHorizontalStyles}>
-          <HealthHazardsForLeadExposure />
-        </div>
-
         <div
           style={{
+            position: "fixed",
+            zIndex: -2,
+            top: 0,
+            left: 0,
+            height: "100vh",
+            width: "100vw",
             backgroundColor: "var(--primary-darker)",
           }}
-          className="darkRow"
-        >
-          <div style={pageContentLayoutHorizontalStyles}>
-            <FlintWaterCrisis />
+          className="transition-by-itself"
+          // background
+        />
+
+        {/* <div
+          style={{
+            position: "fixed",
+            zIndex: -1,
+            height: 200,
+            width: 200,
+            backgroundColor: "orange",
+            borderRadius: 100,
+            top: 200,
+            left: 210,
+          }}
+          // background shapes
+        /> */}
+
+        <div>
+          <div
+            style={{
+              height: 96,
+              backgroundColor: "white",
+            }}
+          />
+
+          <div className="solid-row">
+            <div style={pageContentLayoutHorizontalStyles}>
+              <ChemOfLead />
+            </div>
           </div>
-        </div>
 
-        <div style={pageContentLayoutHorizontalStyles}>
-          <div style={{ height: 200 }} />
-          <h2>Contents</h2>
-          <ul>
-            <li>
-              The chemistry of lead (both physical and chemical properties)
-            </li>
+          <div className="solid-row">
+            <div style={pageContentLayoutHorizontalStyles}>
+              <HealthHazardsForLeadExposure />
+            </div>
+          </div>
 
-            <li>
-              Health hazards for lead exposure - for both infants/children and
-              adults and are the effects reversible?
-            </li>
+          <div className="transparent-row">
+            <div style={pageContentLayoutHorizontalStyles}>
+              <FlintWaterCrisis />
+            </div>
+          </div>
+          
+          <div className="solid-row">
+            <div style={pageContentLayoutHorizontalStyles}>
+              <div style={{ height: 200 }} />
+              <h2>Contents</h2>
+              <ul>
+                <li>
+                  The chemistry of lead (both physical and chemical properties)
+                </li>
 
-            <li>
-              The Flint water crisis - what caused it and how was the crisis
-              corrected? A clear understanding of the chemistry involved is
-              important
-            </li>
+                <li>
+                  Health hazards for lead exposure - for both infants/children
+                  and adults and are the effects reversible?
+                </li>
 
-            <li>What are safe levels of lead in drinking water?</li>
-            <li>
-              Home testing kits for lead - what is the chemistry behind them and
-              how reliable are they?
-            </li>
+                <li>
+                  The Flint water crisis - what caused it and how was the crisis
+                  corrected? A clear understanding of the chemistry involved is
+                  important
+                </li>
 
-            <li>
-              Removal of lead from the body - naturally and by chelation therapy
-            </li>
+                <li>What are safe levels of lead in drinking water?</li>
+                <li>
+                  Home testing kits for lead - what is the chemistry behind them
+                  and how reliable are they?
+                </li>
 
-            <li>
-              Your site will include an interactive map of the U. S. that
-              includes the following data for at least 5 states. Data will
-              include the number or percent of lead service lines state
-            </li>
-          </ul>
-          <h2>Brain Storm</h2>
-          {/* <TrainExport /> */}
-          <h3>Flow</h3>
-          <p>
-            Put everything in one page → can easily check info by scrolling down
-            (Imagine Apple website for introducing their products)
-          </p>
-          <ol>
-            <li>Show how lead in water can be harmful</li>
-            <li>
-              Map (make with threeJS ig) (threeJS is a cool tool, but it
-              requires too much work) → show "the number of percent of lead
-              service lines state" (required) and
-            </li>
-          </ol>
-          {/* <ul style={listStyles}>
+                <li>
+                  Removal of lead from the body - naturally and by chelation
+                  therapy
+                </li>
+
+                <li>
+                  Your site will include an interactive map of the U. S. that
+                  includes the following data for at least 5 states. Data will
+                  include the number or percent of lead service lines state
+                </li>
+              </ul>
+              <h2>Brain Storm</h2>
+              {/* <TrainExport /> */}
+              <h3>Flow</h3>
+              <p>
+                Put everything in one page → can easily check info by scrolling
+                down (Imagine Apple website for introducing their products)
+              </p>
+              <ol>
+                <li>Show how lead in water can be harmful</li>
+                <li>
+                  Map (make with threeJS ig) (threeJS is a cool tool, but it
+                  requires too much work) → show "the number of percent of lead
+                  service lines state" (required) and
+                </li>
+              </ol>
+              {/* <ul style={listStyles}>
           {links.map((link) => (
             <li key={link.url} style={{ ...listItemStyles, color: link.color }}>
               <span>
@@ -243,6 +208,8 @@ const IndexPage = () => {
             </li>
           ))}
         </ul> */}
+            </div>
+          </div>
         </div>
       </main>
     </Layout>
