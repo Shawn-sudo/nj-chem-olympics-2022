@@ -10,7 +10,7 @@
 :root {
   --primary: #705df2;
   --primary-darker: rgba(21, 12, 34);
-  /* --highlight */
+  --highlight: rgba(235, 235, 244, 0.72);
   /* --hint */
   /* --disabled */
 }
@@ -39,6 +39,37 @@ h2 {
   background-color: white;
 }
 
-.transparent-row {
+/* .transparent-row {
   color: white;
+} */
+
+.background-card {
+  background-color: var(--highlight);
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-radius: 20px;
+}
+
+.card {
+  background-color: white;
+  border-radius: 20px;
+  padding: 10px;
+  margin: 5px;
+  height: fit-content;
+}
+
+td,
+th {
+  border: 1px solid var(--highlight);
+  text-align: left;
+  padding: 8px;
+  border-radius: 5px;
+}
+
+tr:nth-child(even) {
+  background-color: var(--highlight);
 }

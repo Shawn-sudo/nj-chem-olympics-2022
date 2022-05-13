@@ -1,7 +1,8 @@
 import React from "react";
 
 const cardStyles = {
-  backgroundColor: "rgba(128, 128, 128, 0.08)",
+  backgroundColor: "rgba(255, 255, 255, 0.72)",
+  color: "black",
   backdropFilter: "blur(20px) saturate(180%)",
   WebkitBackdropFilter: "blur(20px) saturate(180%)",
   padding: 20,

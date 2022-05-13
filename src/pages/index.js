@@ -14,7 +14,7 @@ const pageContentLayoutVerticalStyles = {
 };
 
 const pageContentLayoutHorizontalStyles = {
-  maxWidth: 1200,
+  maxWidth: 1400,
   margin: "auto",
   padding: 20,
 };
@@ -96,7 +96,7 @@ const IndexPage = () => {
           // background
         />
 
-        {/* <div
+        <div
           style={{
             position: "fixed",
             zIndex: -1,
@@ -108,7 +108,7 @@ const IndexPage = () => {
             left: 210,
           }}
           // background shapes
-        /> */}
+        />
 
         <div>
           <div
@@ -135,7 +135,7 @@ const IndexPage = () => {
               <FlintWaterCrisis />
             </div>
           </div>
-          
+
           <div className="solid-row">
             <div style={pageContentLayoutHorizontalStyles}>
               <div style={{ height: 200 }} />
