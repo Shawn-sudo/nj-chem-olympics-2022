@@ -1,33 +1,54 @@
 import React from "react";
 
-const cardStyles = {
-  backgroundColor: "rgba(255, 255, 255, 0.72)",
-  color: "black",
-  backdropFilter: "blur(20px) saturate(180%)",
-  WebkitBackdropFilter: "blur(20px) saturate(180%)",
-  padding: 20,
-  borderRadius: 20,
-};
-
 const FlintWaterCrisis = () => {
   return (
-    <div style={cardStyles}>
+    <div className="background-card">
       <h2>The Flint Water Crisis</h2>
+      <h3>
+        A public health crisis that exposed tens of thousands of people to
+        dangerous levels of lead.
+      </h3>
+      <ol>
+        <li>
+          <h3>Cause</h3>
+        </li>
+        <div className="card">
+          <h3>Switch of Drinking Water Supply</h3>
+          <p>
+            To save money, the city decided to switch its water supply from
+            Detroit's system to their own in 2013. They pumped water from the
+            Flint River until they build a new water pipeline from Lake Huron.
+            {/* However, issues with the river were ignored; t */}
+          </p>
+        </div>
+        <li>
+          <h3>Process</h3>
+        </li>
+        <div className="card">
+          <h3>Old Lead Water Pipes</h3>
+          <p></p>
+          <h3>Corrosive Water from Flint River</h3>
+          <p>
+            The river has served as an unofficial waste disposal site from the
+            many local industries for more than a century. The corrosive river
+            water corroded lead out from old pipes and carried to thousands of
+            homes. Furthermore, chlorine, which was put to disinfect the water,
+            also corroded the pipe.
+          </p>
+          <h3>Chlorine</h3>
+        </div>
+        <li>
+          <h3>Correction</h3>
+        </li>
+        <div className="card"></div>
+        <li>
+          <h3>Result</h3>
+        </li>
+        <div className="card"></div>
+      </ol>
       <p>
         What caused it and how was the crisis corrected? A clear understanding
         of the chemistry involved is important
-      </p>
-      <p>
-        Quick summary: those lead water pipes were there for a long time. It was
-        okay, because the water passing the pipe "coated" the surface,
-        preventing lead to react with water and so on. Then, Detroit raised the
-        price for water supply (the water was from Great Lakes via Detroit's
-        water system). Flint (City) kinda refused, and rather built their own
-        water pipe system. Obviously, it took a while, so during the
-        corporation, they got water from a river (forgot the name). Water from
-        the river was very poor, and it's either the poor river water itself or
-        the treatment for the water that took the "coats" on the lead pipe off,
-        and caused the lead to melt into water (solution)
       </p>
       <h3>To Do</h3>
       <ul>
@@ -35,6 +56,9 @@ const FlintWaterCrisis = () => {
         <li>Work distribution: research for each topics</li>
         <li>Styling</li>
       </ul>
+      <a href="https://www.nrdc.org/stories/flint-water-crisis-everything-you-need-know">
+        src
+      </a>
     </div>
   );
 };

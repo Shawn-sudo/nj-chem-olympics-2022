@@ -82,7 +82,7 @@ const IndexPage = () => {
         {/* Content wrapper */}
         <title>Home Page</title>
 
-        <div
+        {/* <div
           style={{
             position: "fixed",
             zIndex: -2,
@@ -94,9 +94,9 @@ const IndexPage = () => {
           }}
           className="transition-by-itself"
           // background
-        />
+        /> */}
 
-        <div
+        {/* <div
           style={{
             position: "fixed",
             zIndex: -1,
@@ -108,7 +108,7 @@ const IndexPage = () => {
             left: 210,
           }}
           // background shapes
-        />
+        /> */}
 
         <div>
           <div
@@ -130,7 +130,10 @@ const IndexPage = () => {
             </div>
           </div>
 
-          <div className="transparent-row">
+          <div
+            // className="transparent-row"
+            className="solid-row"
+          >
             <div style={pageContentLayoutHorizontalStyles}>
               <FlintWaterCrisis />
             </div>
@@ -188,26 +191,6 @@ const IndexPage = () => {
                   service lines state" (required) and
                 </li>
               </ol>
-              {/* <ul style={listStyles}>
-          {links.map((link) => (
-            <li key={link.url} style={{ ...listItemStyles, color: link.color }}>
-              <span>
-                <a
-                  style={linkStyle}
-                  href={`${link.url}?utm_source=starter&utm_medium=start-page&utm_campaign=minimal-starter`}
-                >
-                  {link.text}
-                </a>
-                {link.badge && (
-                  <span style={badgeStyle} aria-label="New Badge">
-                    NEW!
-                  </span>
-                )}
-                <p style={descriptionStyle}>{link.description}</p>
-              </span>
-            </li>
-          ))}
-        </ul> */}
             </div>
           </div>
         </div>

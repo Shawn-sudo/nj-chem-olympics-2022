@@ -17,7 +17,6 @@ const endingCreditStyles = { fontWeight: "bold" };
 const Footer = () => {
   return (
     <footer
-      className="App-footer"
       style={{
         textAlign: "center",
         backgroundColor: "ghostwhite",
@@ -46,16 +45,11 @@ const Footer = () => {
           style={imgStyles}
         />
       </Link>
-      <p>&copy; 2022. Seihyun Lee, Andy Zhao, Ethan Zhao</p>
-
+      {/* <p>&copy; 2022. Seihyun Lee, Andy Zhao, Ethan Zhao</p> */}
+      {/* I'm not sure if it is ok to mark copyright even though we don't "own" the copyright for any of those images */}
       <p style={endingCreditStyles}>
-        Todo: put roles here (develop: --, data research (from the Internet ig):
-        --)
+        Develop & Design & Research: Seihyun Lee, Ethan Zhao, Andy Zhao
       </p>
-
-      <p style={endingCreditStyles}>Develop: Seihyun Lee, </p>
-      <p style={endingCreditStyles}>Design: Seihyun Lee, </p>
-      <p style={endingCreditStyles}>Research: </p>
     </footer>
   );
 };

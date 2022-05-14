@@ -8,6 +8,13 @@ const imgStyles = {
   height: "fit-content",
 };
 
+const rowStyles = {
+  display: "flex",
+  flexDirection: "row",
+  justifyContent: "space-around",
+  flexWrap: "wrap",
+};
+
 const ChemOfLead = () => {
   return (
     <div className="background-card">
@@ -23,14 +30,7 @@ const ChemOfLead = () => {
         </div>
         <h2>Chemistry of Lead</h2>
         <h3>Physical Properties</h3>
-        <div
-          style={{
-            display: "flex",
-            flexDirection: "row",
-            justifyContent: "space-around",
-            flexWrap: "wrap",
-          }}
-        >
+        <div style={rowStyles}>
           <div className="card">
             <h3>Appearance</h3>
             <p>
@@ -88,20 +88,31 @@ const ChemOfLead = () => {
                 </td>
               </tr>
             </table>
+            <a href="https://www.britannica.com/science/lead-chemical-element">
+              src
+            </a>
           </div>
         </div>
-        <a href="https://www.britannica.com/science/lead-chemical-element">
-          src
-        </a>
 
         <h3>Chemcial Properties</h3>
         <div className="card">
+          <h3>Durability</h3>
           <p>
-            todo: (From the ancient times in Romans, it was used to make water
-            pipes due to its durability and resistance to corrosion.)
+            Lead is very resistant to corrosion but tarnishes upon exposure to
+            air. Due to its durability, it was used to make water pipes from
+            ancient times in Romans.
           </p>
+          <h3>Poisonous</h3>
+          <p>
+            Lead has been known to be poisonous. [History of treating it as a
+            poison]
+          </p>
+          <h3>Alloys</h3>
+          <p>Pewter and solder</p>
+          <a href="https://www.lenntech.com/periodic/elements/pb.htm#ixzz7T7S2NZak ">
+            src
+          </a>
         </div>
-        <p></p>
       </div>
     </div>
   );
