@@ -6,6 +6,8 @@ import HealthHazardsForLeadExposure from "../components/home_page/health_hazards
 import "../App.css";
 import { Link } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
+import SafeLevelsOfLeadInDrinkingWater from "../components/home_page/safe_levels_of_lead_in_drinking_water";
+import HomeTestingKitsForLead from "../components/home_page/home_testing_kits_for_lead";
 
 // styles
 const pageContentLayoutVerticalStyles = {
@@ -136,6 +138,18 @@ const IndexPage = () => {
           >
             <div style={pageContentLayoutHorizontalStyles}>
               <FlintWaterCrisis />
+            </div>
+          </div>
+
+          <div className="solid-row">
+            <div style={pageContentLayoutHorizontalStyles}>
+              <SafeLevelsOfLeadInDrinkingWater />
+            </div>
+          </div>
+
+          <div className="solid-row">
+            <div style={pageContentLayoutHorizontalStyles}>
+              <HomeTestingKitsForLead />
             </div>
           </div>
 

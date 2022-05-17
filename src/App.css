@@ -11,7 +11,7 @@
   --primary: #705df2;
   --primary-darker: rgba(21, 12, 34);
   --highlight: rgba(235, 235, 244, 0.72);
-  /* --hint */
+  --hint: grey;
   /* --disabled */
 }
 
@@ -72,4 +72,16 @@ th {
 
 tr:nth-child(even) {
   background-color: var(--highlight);
+}
+
+p {
+  font-size: 16px;
+}
+
+li {
+  font-size: 16px;
+}
+
+dd {
+  color: var(--hint);
 }
