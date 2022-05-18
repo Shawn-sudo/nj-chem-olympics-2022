@@ -1,8 +1,8 @@
-## [The website](https://nj-chem-2022.seihyun.atrable.com)
+## [The website (url)](https://nj-chem-2022.seihyun.atrable.com)
 
-## Todo: Abstract
-of the website
-## Todo: Sources
+## Abstract
+Lead is all around us. However, sometimes it can cause deadly effects, as happened in the city of Flint.
+
 ## Page Editing
  1. Go to `src/pages/` and edit a page.
     - `src/pages/MyPageName.js` would be accessible from `nj-chem-2022.seihyun.atrable.com/MyPageName`
