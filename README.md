@@ -1,4 +1,8 @@
 ## [The website (url)](https://nj-chem-2022.seihyun.atrable.com)
+[https://nj-chem-2022.seihyun.atrable.com](https://nj-chem-2022.seihyun.atrable.com)
+
+[https://njchemolympics2022master.gatsbyjs.io/](https://njchemolympics2022master.gatsbyjs.io/)
+
 
 ## Abstract
 Lead is all around us. However, sometimes it can cause deadly effects, as happened in the city of Flint.
