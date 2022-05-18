@@ -3,6 +3,9 @@
 
 [https://njchemolympics2022master.gatsbyjs.io/](https://njchemolympics2022master.gatsbyjs.io/)
 
+## Made by
+Seihyun (Shawn) Lee, Andy Zhao, and Ethan Zhao
+
 
 ## Abstract
 Lead is all around us. However, sometimes it can cause deadly effects, as happened in the city of Flint.
