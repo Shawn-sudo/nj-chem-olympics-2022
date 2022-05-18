@@ -4,7 +4,7 @@ const Bibliography = () => {
   return (
     <div className="background-card">
       <h2>Bibliography</h2>
-      <div className="card">
+      <div className="card" style={{ overflowX: "auto" }}>
         <p>
           Conger, Cristen. “Do Home Lead Tests Really Work?” HowStuffWorks,
           HowStuffWorks, 13 Apr. 2009,{" "}
@@ -17,6 +17,13 @@ const Bibliography = () => {
           EPA, Environmental Protection Agency,{" "}
           <a href="https://www.epa.gov/lead/lead-test-kits">
             https://www.epa.gov/lead/lead-test-kits
+          </a>
+          .
+        </p>
+        <p>
+          EPA, Environmental Protection Agency,{" "}
+          <a href="https://www.epa.gov/toxics-release-inventory-tri-program">
+            https://www.epa.gov/toxics-release-inventory-tri-program
           </a>
           .
         </p>
@@ -73,14 +80,6 @@ const Bibliography = () => {
           The Health Hazards of Lead,{" "}
           <a href="https://www.osh.net/articles/archive/osh_basics_2001_may26.htm">
             https://www.osh.net/articles/archive/osh_basics_2001_may26.htm
-          </a>
-          .
-        </p>
-        <p>
-          “Toxics Release Inventory (TRI) Guideme.” EPA, Environmental
-          Protection Agency,{" "}
-          <a href="https://ordspub.epa.gov/ords/guideme_ext/f?p=guideme%3Agd%3A0%3A%3A%3A%3Agd%3Alead_guidance_4_1">
-            https://ordspub.epa.gov/ords/guideme_ext/f?p=guideme%3Agd%3A0%3A%3A%3A%3Agd%3Alead_guidance_4_1
           </a>
           .
         </p>

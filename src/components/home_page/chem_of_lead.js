@@ -18,15 +18,6 @@ const rowStyles = {
 const ChemOfLead = () => {
   return (
     <div className="background-card">
-      <div
-        style={{
-          backgroundColor: "white",
-          borderRadius: 20,
-          height: 200,
-        }}
-      >
-        <p>(later) A 3D lead model here</p>
-      </div>
       <h2>Chemistry of Lead</h2>
       <h3>Physical Properties</h3>
       <div style={rowStyles}>
@@ -96,7 +87,12 @@ const ChemOfLead = () => {
           />
         </div>
 
-        <div className="card">
+        <div
+          className="card"
+          style={{
+            overflowX: "auto",
+          }}
+        >
           <h3>Principle Lead-Ore Compounds</h3>
           <table>
             <tr>

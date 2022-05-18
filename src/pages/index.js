@@ -9,12 +9,11 @@ import { StaticImage } from "gatsby-plugin-image";
 import SafeLevelsOfLeadInDrinkingWater from "../components/home_page/safe_levels_of_lead_in_drinking_water";
 import HomeTestingKitsForLead from "../components/home_page/home_testing_kits_for_lead";
 import RemovalOfLeadFromTheBody from "../components/home_page/removal_of_lead_from_the_body";
-import Bibliography from "../components/bibliography";
+import Bibliography from "../components/home_page/bibliography";
 
 // styles
 const pageContentLayoutVerticalStyles = {
   minHeight: "100vh",
-  // paddingTop: 96,
 };
 
 const pageContentLayoutHorizontalStyles = {
@@ -54,6 +53,10 @@ const IndexPage = () => {
             width: "100%",
             maxWidth: 1200,
             margin: "auto",
+            display: "flex",
+            flexDirection: "row",
+            justifyContent: "space-between",
+            alignItems: "center",
           }}
         >
           <Link to="/">
@@ -78,95 +81,65 @@ const IndexPage = () => {
               style={imgStyles}
             />
           </Link>
-          todo: show the progress
+          <h2>Chemistry and Presence of Lead</h2>
         </div>
       </div>
 
       <main style={pageContentLayoutVerticalStyles}>
         {/* Content wrapper */}
-        <title>Home Page</title>
-
-        {/* <div
-          style={{
-            position: "fixed",
-            zIndex: -2,
-            top: 0,
-            left: 0,
-            height: "100vh",
-            width: "100vw",
-            backgroundColor: "var(--primary-darker)",
-          }}
-          className="transition-by-itself"
-          // background
-        /> */}
-
-        {/* <div
-          style={{
-            position: "fixed",
-            zIndex: -1,
-            height: 200,
-            width: 200,
-            backgroundColor: "orange",
-            borderRadius: 100,
-            top: 200,
-            left: 210,
-          }}
-          // background shapes
-        /> */}
-
+        <title>Chemistry and Presence of Lead</title>
         <div>
           <div
             style={{
               height: 96,
-              backgroundColor: "white",
             }}
           />
 
-          <div className="solid-row">
-            <div style={pageContentLayoutHorizontalStyles}>
-              <ChemOfLead />
-            </div>
+          <div style={pageContentLayoutHorizontalStyles}>
+            <ChemOfLead />
           </div>
 
-          <div
-            // className="transparent-row"
-            className="solid-row"
-          >
-            <div style={pageContentLayoutHorizontalStyles}>
-              <FlintWaterCrisis />
-            </div>
+          <div style={pageContentLayoutHorizontalStyles}>
+            <FlintWaterCrisis />
           </div>
 
-          <div className="solid-row">
-            <div style={pageContentLayoutHorizontalStyles}>
-              <SafeLevelsOfLeadInDrinkingWater />
-            </div>
+          <div style={pageContentLayoutHorizontalStyles}>
+            <SafeLevelsOfLeadInDrinkingWater />
           </div>
 
-          <div className="solid-row">
-            <div style={pageContentLayoutHorizontalStyles}>
-              <HomeTestingKitsForLead />
-            </div>
+          <div style={pageContentLayoutHorizontalStyles}>
+            <HomeTestingKitsForLead />
           </div>
 
-          <div className="solid-row">
-            <div style={pageContentLayoutHorizontalStyles}>
-              <HealthHazardsForLeadExposure />
-            </div>
+          <div style={pageContentLayoutHorizontalStyles}>
+            <HealthHazardsForLeadExposure />
           </div>
 
-          <div className="solid-row">
-            <div style={pageContentLayoutHorizontalStyles}>
-              <RemovalOfLeadFromTheBody />
+          <div style={pageContentLayoutHorizontalStyles}>
+            <RemovalOfLeadFromTheBody />
+          </div>
+
+          <div style={pageContentLayoutHorizontalStyles}>
+            <div className="background-card">
+              <h2>Number of Lead Service Lines in each state</h2>
+              <p>Tap on each pinpoint for the number of lead lines</p>
+              <iframe
+                src="https://www.google.com/maps/d/embed?mid=1OgoC7S-L9xL9Y9bEBTQtgwNKbCtsnebI&ehbc=2E312F"
+                style={{
+                  width: "100%",
+                  borderRadius: 20,
+                  border: "none",
+                }}
+                height="600"
+                title="interactive_map"
+              ></iframe>
             </div>
           </div>
 
           <div style={{ height: 200 }} />
 
-          <div className="solid-row">
-            <div style={pageContentLayoutHorizontalStyles}>
-              <Bibliography />
-            </div>
+          <div style={pageContentLayoutHorizontalStyles}>
+            <Bibliography />
           </div>
         </div>
       </main>
