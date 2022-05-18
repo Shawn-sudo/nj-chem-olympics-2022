@@ -25,36 +25,38 @@ const HomeTestingKitsForLead = () => {
       <div className="card">
         <table>
           <caption>EPA - Recognized Lead Test Kits</caption>
-          <tr>
-            <td>
-              <i>
-                3M<sup>TM</sup>LeadCheck<sup>TM</sup>
-              </i>
-            </td>
-            <td>
-              This lead test kit can reliably determine whether lead is on wood,
-              ferrous metal, or drywall and plaster surfaces.
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <i>D-Lead®</i>
-            </td>
-            <td>
-              This lead test kit is manufactured by ESCA Tech, Inc.. It can
-              consistently determine if lead is not present on wood, ferrous
-              metal, or drywall and plaster surfaces.
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <i>State of Massachusetts</i>
-            </td>
-            <td>
-              The EPA recognizes the reliability of the product to determine
-              lead on wood, ferrous metal, or drywall and plaster surfaces.
-            </td>
-          </tr>
+          <tbody>
+            <tr>
+              <td>
+                <i>
+                  3M<sup>TM</sup>LeadCheck<sup>TM</sup>
+                </i>
+              </td>
+              <td>
+                This lead test kit can reliably determine whether lead is on
+                wood, ferrous metal, or drywall and plaster surfaces.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <i>D-Lead®</i>
+              </td>
+              <td>
+                This lead test kit is manufactured by ESCA Tech, Inc.. It can
+                consistently determine if lead is not present on wood, ferrous
+                metal, or drywall and plaster surfaces.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <i>State of Massachusetts</i>
+              </td>
+              <td>
+                The EPA recognizes the reliability of the product to determine
+                lead on wood, ferrous metal, or drywall and plaster surfaces.
+              </td>
+            </tr>
+          </tbody>
         </table>
       </div>
     </div>
