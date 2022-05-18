@@ -8,6 +8,8 @@ import { Link } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
 import SafeLevelsOfLeadInDrinkingWater from "../components/home_page/safe_levels_of_lead_in_drinking_water";
 import HomeTestingKitsForLead from "../components/home_page/home_testing_kits_for_lead";
+import RemovalOfLeadFromTheBody from "../components/home_page/removal_of_lead_from_the_body";
+import Bibliography from "../components/bibliography";
 
 // styles
 const pageContentLayoutVerticalStyles = {
@@ -126,12 +128,6 @@ const IndexPage = () => {
             </div>
           </div>
 
-          <div className="solid-row">
-            <div style={pageContentLayoutHorizontalStyles}>
-              <HealthHazardsForLeadExposure />
-            </div>
-          </div>
-
           <div
             // className="transparent-row"
             className="solid-row"
@@ -155,56 +151,21 @@ const IndexPage = () => {
 
           <div className="solid-row">
             <div style={pageContentLayoutHorizontalStyles}>
-              <div style={{ height: 200 }} />
-              <h2>Contents</h2>
-              <ul>
-                <li>
-                  The chemistry of lead (both physical and chemical properties)
-                </li>
+              <HealthHazardsForLeadExposure />
+            </div>
+          </div>
 
-                <li>
-                  Health hazards for lead exposure - for both infants/children
-                  and adults and are the effects reversible?
-                </li>
+          <div className="solid-row">
+            <div style={pageContentLayoutHorizontalStyles}>
+              <RemovalOfLeadFromTheBody />
+            </div>
+          </div>
 
-                <li>
-                  The Flint water crisis - what caused it and how was the crisis
-                  corrected? A clear understanding of the chemistry involved is
-                  important
-                </li>
+          <div style={{ height: 200 }} />
 
-                <li>What are safe levels of lead in drinking water?</li>
-                <li>
-                  Home testing kits for lead - what is the chemistry behind them
-                  and how reliable are they?
-                </li>
-
-                <li>
-                  Removal of lead from the body - naturally and by chelation
-                  therapy
-                </li>
-
-                <li>
-                  Your site will include an interactive map of the U. S. that
-                  includes the following data for at least 5 states. Data will
-                  include the number or percent of lead service lines state
-                </li>
-              </ul>
-              <h2>Brain Storm</h2>
-              {/* <TrainExport /> */}
-              <h3>Flow</h3>
-              <p>
-                Put everything in one page → can easily check info by scrolling
-                down (Imagine Apple website for introducing their products)
-              </p>
-              <ol>
-                <li>Show how lead in water can be harmful</li>
-                <li>
-                  Map (make with threeJS ig) (threeJS is a cool tool, but it
-                  requires too much work) → show "the number of percent of lead
-                  service lines state" (required) and
-                </li>
-              </ol>
+          <div className="solid-row">
+            <div style={pageContentLayoutHorizontalStyles}>
+              <Bibliography />
             </div>
           </div>
         </div>

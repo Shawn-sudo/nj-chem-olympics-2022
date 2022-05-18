@@ -4,45 +4,47 @@ const HealthHazardsForLeadExposure = () => {
   return (
     <div className="background-card">
       <h2>Health Hazards For Lead Exposure</h2>
-      <h1>Todo: image here</h1>
       <div className="card">
+        <h3>Children</h3>
         <p>
-          When lead is stored into our body, it is absorbed into bones, blood,
-          and tissues. As a person ages, their bones will remineralize and
-          internal exposure can increase the result of larger releases of lead
-          from the bone tissue. Lead poisoning can occur if a person is exposed
-          to very high levels of lead over a short period of time. The person
-          may feel abdominal pain. Constipated, tired, headachy, irritable,
-          memory loss. These symptoms can appear solely leading to lead
-          poisoning being overlooked. Exposure to high level of lead may cause
-          anemia, weakness, and kidney and brain damage. Very high lead exposure
-          can cause death. In addition, lead can also pose a threat to pregnant
-          women. Lead can cross the placental barrier, which means pregnant
-          women who are exposed to lead also expose their unborn child. Lead cna
-          damage a developing baba’s nervous system. Even low-level lead
-          exposures in developing babies have been found to affect behavior and
-          intelligence. Lead exposure can cause miscarriage, stillbirths, and
-          infertility. Generally, lead affects children more than adults.
-          Children ten to show signs of severe toxicity to lead at lower levels.
-          Lead poisoning can occur in children where their parents accidentally
-          brought home lead dust on their loathing. A person who is exposed to
-          lead over a period of time may feel abdominal pain, constipated,
-          depressed, distracted, forgetful, irritable, nauseous/sick. People
-          with prolonged exposure to lead may also be at risk for high blood
-          pressure, heart disease, kidney disease, and reduced fertility.
-          Furthermore, the Department of Health and Human Services (DHHS),
-          Environmental Protection Agency (EPA), and the International Agency
-          for Research on Cancer (IARC) have determined that lead is
-          cancer-causing in humans. Protecting children from lead exposure is to
-          important for their overall health. No safe blood lead level in
-          children has been identified. Even low exposure of lead in children is
-          seen to have a negative impact on a child's intelligence, ability to
-          pay attention, and academic achievement. Once a child swallows lead,
-          their blood lead level rises. Once a child’s exposure to lead stops,
-          the amount of lead in the blood gradually decreases. The child’s body
-          releases the lead through urine, sweat, and feces. Lead is also stored
-          in bone, and can take decades for lead stored in bones to decrease.
+          There is no safe blood level for children. As a result, protecting
+          them from lead exposure is important for their future health. Even
+          exposure to low lead levels is seen to negatively impact children,
+          such as, affecting their cognitive development. If caught early the
+          effects of lead can be reversible, but continued exposure to lead can
+          cause permanent damage. Children can get exposed to lead by touching,
+          swallowing, or breathing in lead or lead dust. These damaging effects
+          can cause damage to the brain and nervous system, slowed growth
+          development, learning behavior problems, and hearing speech problems.
+          When a child is exposed to lead, it’s often difficult to see. There is
+          no immediate symptom in recognizing lead exposure. Lead exposure is
+          more harmful to children less than six years old because their bodies
+          are still growing. A children’s blood lead level can increase greatly
+          once they swallow lead. However, when the exposure stops, the blood
+          lead level decreases gradually. Children alsos release lead through
+          urine, sweat, and feces. However, it can take decades for the amount
+          of lead to decrease in bones.
         </p>
+
+        <h3>Adults</h3>
+        <p>
+          Exposure to lead is not only dangerous to children but also for
+          adults. When adults are exposed to lead, they may have high blood
+          pressure, joint and muscle pain, difficulties with memory or
+          concentration, headache, abdominal pain, mood disorders, reduced sperm
+          count and abnormal sperm, and miscarrieg, stillbirth or premature
+          birth in pregnant women.
+        </p>
+      </div>
+
+      <h3>Are the Effects of Lead Reversible?</h3>
+      <div className="card">
+        <b>No,</b> the effects of lead exposure aren’t reversible. However, by
+        finding and removing the source of lead blood lead levels can decrease.
+        Even though lead poisoning is irreversible, lead poisoning is
+        preventable. Eating high amounts of iron, calcium, and vitamin C can
+        help protect against lead. Washing commonly used objects such as toys
+        can reduce the risk of lead exposure.
       </div>
     </div>
   );
