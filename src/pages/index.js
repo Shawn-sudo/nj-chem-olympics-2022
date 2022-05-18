@@ -52,6 +52,7 @@ const IndexPage = () => {
             height: "100%",
             width: "100%",
             maxWidth: 1200,
+            minWidth: 550,
             margin: "auto",
             display: "flex",
             flexDirection: "row",
@@ -81,6 +82,7 @@ const IndexPage = () => {
               style={imgStyles}
             />
           </Link>
+
           <h2>Chemistry and Presence of Lead</h2>
         </div>
       </div>
